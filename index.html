@@ -3,248 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Toko Iwak Gatul</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8f8f5;
+            color: #222;
+        }
+
+        header {
+            background: #00796b;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #004d40;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #80cbc4;
+        }
+
+        .home {
+            text-align: center;
+            padding: 70px 20px;
+            background: #b2dfdb;
+        }
+
+        .home h2 {
+            color: #004d40;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .home p {
+            font-size: 18px;
+        }
+
+        button {
+            background: #00796b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #004d40;
+        }
+
+        #produk {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #produk h2 {
+            color: #00796b;
+            margin-bottom: 30px;
+        }
+
+        .produk {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 230px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #aaa;
+        }
+
+        .card h3 {
+            color: #00796b;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+        }
+
+        .kontak {
+            background: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .kontak h2 {
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        .kontak p {
+            margin: 10px;
+        }
+
+        footer {
+            background: #00796b;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>🐟 TOKO IWAK GATUL</h1>
-    <p>Ikan Segar, Harga Bersahabat</p>
-</header>
+    <!-- HEADER -->
+    <header>
+        <h1>🐟 TOKO IWAK GATUL 🐟</h1>
+        <p>Ikan Segar, Harga Bersahabat</p>
+    </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#produk">Produk</a>
-    <a href="#kontak">CO</a>
-</nav>
+    <!-- MENU -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="#kontak">CO</a>
+    </nav>
 
-<section id="home" class="home">
-    <h2>Selamat Datang di Toko Iwak Gatul</h2>
-    <p>
-        Menyediakan berbagai macam ikan segar
-        dengan kualitas terbaik.
-    </p>
-
-    <button onclick="pesanSekarang()">Pesan Sekarang</button>
-</section>
-
-<section id="produk">
-    <h2>Daftar Produk</h2>
-
-    <div class="produk">
-
-        <div class="card">
-            <h3>🐟 Ikan Lele</h3>
-            <p>Rp20.000 / Kg</p>
-            <button onclick="pesan('Ikan Lele')">
-                Pesan
-            </button>
-        </div>
-
-        <div class="card">
-            <h3>🐠 Ikan Nila</h3>
-            <p>Rp30.000 / Kg</p>
-            <button onclick="pesan('Ikan Nila')">
-                Pesan
-            </button>
-        </div>
-
-        <div class="card">
-            <h3>🐡 Ikan Gurame</h3>
-            <p>Rp40.000 / Kg</p>
-            <button onclick="pesan('Ikan Gurame')">
-                Pesan
-            </button>
-        </div>
-
-    </div>
-</section>
-
-<section id="kontak" class="kontak">
-    <h2>📞 CO / CONTACT US</h2>
-
-    <p>📍 Alamat: Jl. Contoh Alamat Toko Iwak Gatul</p>
-    <p>📱 No. WhatsApp: 08XXXXXXXXXX</p>
-
-    <button onclick="bukaWhatsApp()">
-        💬 Hubungi WhatsApp
-    </button>
-</section>
-
-<footer>
-    <p>© 2026 Toko Iwak Gatul</p>
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #e8f8f5;
-    color: #222;
-}
-
-header {
-    background: #00796b;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-header h1 {
-    font-size: 35px;
-    margin-bottom: 10px;
-}
-
-nav {
-    background: #004d40;
-    text-align: center;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #80cbc4;
-}
-
-.home {
-    text-align: center;
-    padding: 70px 20px;
-    background: #b2dfdb;
-}
-
-.home h2 {
-    color: #004d40;
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-.home p {
-    font-size: 18px;
-}
-
-button {
-    background: #00796b;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #004d40;
-}
-
-#produk {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-#produk h2 {
-    color: #00796b;
-    margin-bottom: 30px;
-}
-
-.produk {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: white;
-    width: 230px;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px #aaa;
-}
-
-.card h3 {
-    color: #00796b;
-    margin-bottom: 15px;
-}
-
-.kontak {
-    background: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.kontak h2 {
-    color: #00796b;
-    margin-bottom: 20px;
-}
-
-.kontak p {
-    margin: 10px;
-}
-
-footer {
-    background: #00796b;
-    color: white;
-    text-align: center;
-    padding: 18px;
-    margin-top: 30px;
-}
-function bukaWhatsApp() {
-
-    let nomor = "628XXXXXXXXXX";
-
-    let pesan =
-        "Halo Toko Iwak Gatul, saya ingin bertanya tentang produk ikan.";
-
-    let link =
-        "https://wa.me/" + nomor +
-        "?text=" + encodeURIComponent(pesan);
-
-    window.open(link, "_blank");
-}
-
-
-function pesan(namaIkan) {
-
-    let nomor = "628XXXXXXXXXX";
-
-    let pesan =
-        "Halo Toko Iwak Gatul, saya ingin memesan " +
-        namaIkan + ".";
-
-    let link =
-        "https://wa.me/" + nomor +
-        "?text=" + encodeURIComponent(pesan);
-
-    window.open(link, "_blank");
-}
-
-
-function pesanSekarang() {
-
-    let nomor = "628XXXXXXXXXX";
-
-    let pesan =
-        "Halo Toko Iwak Gatul, saya ingin memesan ikan.";
-
-    let link =
-        "https://wa.me/" + nomor +
-        "?text=" + encodeURIComponent(pesan);
-
-    window.open(link, "_blank");
-}
+    <!-- HOME
