@@ -6,81 +6,86 @@
     <title>Toko Iwak Gatul</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
-        <h1>🐟 TOKO IWAK GATUL 🐟</h1>
-        <p>Ikan Segar dan Berkualitas</p>
+        <div class="logo">🐟 IWAK GATUL</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#produk">Produk</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#beranda">Beranda</a>
-        <a href="#produk">Produk</a>
-        <a href="#kontak">Kontak</a>
-    </nav>
+    <section id="home" class="home">
+        <div>
+            <p class="judul-kecil">SELAMAT DATANG</p>
+            <h1>TOKO <span>IWAK GATUL</span></h1>
+            <p>
+                Menyediakan ikan segar berkualitas dengan harga
+                terjangkau.
+            </p>
 
-    <section id="beranda" class="hero">
-        <h2>Selamat Datang di Toko Iwak Gatul</h2>
-        <p>Menyediakan berbagai macam ikan segar dengan harga terjangkau.</p>
-        <button onclick="pesan()">Pesan Sekarang</button>
-    </section>
-
-    <section id="produk">
-        <h2>Produk Kami</h2>
-
-        <div class="produk">
-            <div class="card">
-                <h3>🐟 Ikan Lele</h3>
-                <p>Rp20.000 / Kg</p>
-                <button onclick="pesanProduk('Ikan Lele')">
-                    Pesan
-                </button>
-            </div>
-
-            <div class="card">
-                <h3>🐠 Ikan Nila</h3>
-                <p>Rp30.000 / Kg</p>
-                <button onclick="pesanProduk('Ikan Nila')">
-                    Pesan
-                </button>
-            </div>
-
-            <div class="card">
-                <h3>🐡 Ikan Gurame</h3>
-                <p>Rp40.000 / Kg</p>
-                <button onclick="pesanProduk('Ikan Gurame')">
-                    Pesan
-                </button>
-            </div>
+            <button onclick="bukaWA()">Pesan Sekarang</button>
         </div>
     </section>
 
+    <section id="produk">
+        <h2>Produk Ikan</h2>
+        <p class="subjudul">Pilihan ikan segar kami</p>
+
+        <div class="produk-container">
+
+            <div class="produk-card">
+                <div class="ikan">🐟</div>
+                <h3>Ikan Lele</h3>
+                <p>Ikan lele segar dan berkualitas.</p>
+                <b>Rp20.000 / Kg</b>
+                <button onclick="pesan('Ikan Lele')">Beli</button>
+            </div>
+
+            <div class="produk-card">
+                <div class="ikan">🐠</div>
+                <h3>Ikan Nila</h3>
+                <p>Ikan nila segar siap dimasak.</p>
+                <b>Rp30.000 / Kg</b>
+                <button onclick="pesan('Ikan Nila')">Beli</button>
+            </div>
+
+            <div class="produk-card">
+                <div class="ikan">🐡</div>
+                <h3>Ikan Gurame</h3>
+                <p>Ikan gurame segar pilihan.</p>
+                <b>Rp40.000 / Kg</b>
+                <button onclick="pesan('Ikan Gurame')">Beli</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="tentang" class="tentang">
+        <h2>Tentang Kami</h2>
+        <p>
+            Toko Iwak Gatul adalah toko yang menyediakan berbagai
+            macam ikan segar dengan kualitas terbaik dan harga
+            yang bersahabat.
+        </p>
+    </section>
+
     <section id="kontak" class="kontak">
-        <h2>📍 Kontak Toko</h2>
+        <h2>Hubungi Kami</h2>
 
-        <p>
-            <b>Alamat:</b><br>
-            Jl. Contoh Alamat Toko Iwak Gatul
-        </p>
+        <p>📍 <b>Alamat:</b> Jl. Contoh Alamat Toko</p>
+        <p>📱 <b>WhatsApp:</b> 08XXXXXXXXXX</p>
 
-        <p>
-            <b>WhatsApp:</b><br>
-            08XXXXXXXXXX
-        </p>
-
-        <a class="whatsapp"
-           href="https://wa.me/628XXXXXXXXXX"
-           target="_blank">
-            💬 Hubungi via WhatsApp
-        </a>
+        <button onclick="bukaWA()">Chat WhatsApp</button>
     </section>
 
     <footer>
-        <p>© 2026 TOKO IWAK GATUL</p>
+        <p>© 2026 Toko Iwak Gatul</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
