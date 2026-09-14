@@ -81,3 +81,170 @@
 
 </body>
 </html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e8f8f5;
+    color: #222;
+}
+
+header {
+    background: #00796b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #004d40;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #80cbc4;
+}
+
+.home {
+    text-align: center;
+    padding: 70px 20px;
+    background: #b2dfdb;
+}
+
+.home h2 {
+    color: #004d40;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 18px;
+}
+
+button {
+    background: #00796b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+#produk {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#produk h2 {
+    color: #00796b;
+    margin-bottom: 30px;
+}
+
+.produk {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 230px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #aaa;
+}
+
+.card h3 {
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.kontak {
+    background: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.kontak h2 {
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.kontak p {
+    margin: 10px;
+}
+
+footer {
+    background: #00796b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+function bukaWhatsApp() {
+
+    let nomor = "628XXXXXXXXXX";
+
+    let pesan =
+        "Halo Toko Iwak Gatul, saya ingin bertanya tentang produk ikan.";
+
+    let link =
+        "https://wa.me/" + nomor +
+        "?text=" + encodeURIComponent(pesan);
+
+    window.open(link, "_blank");
+}
+
+
+function pesan(namaIkan) {
+
+    let nomor = "628XXXXXXXXXX";
+
+    let pesan =
+        "Halo Toko Iwak Gatul, saya ingin memesan " +
+        namaIkan + ".";
+
+    let link =
+        "https://wa.me/" + nomor +
+        "?text=" + encodeURIComponent(pesan);
+
+    window.open(link, "_blank");
+}
+
+
+function pesanSekarang() {
+
+    let nomor = "628XXXXXXXXXX";
+
+    let pesan =
+        "Halo Toko Iwak Gatul, saya ingin memesan ikan.";
+
+    let link =
+        "https://wa.me/" + nomor +
+        "?text=" + encodeURIComponent(pesan);
+
+    window.open(link, "_blank");
+}
