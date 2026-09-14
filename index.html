@@ -6,72 +6,70 @@
     <title>Toko Iwak Gatul</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
         <h1>🐟 TOKO IWAK GATUL 🐟</h1>
-        <p>Iwak Seger, Rego Bersahabat!</p>
+        <p>Ikan Segar dan Berkualitas</p>
     </header>
 
     <nav>
-        <a href="#home">Home</a>
+        <a href="#beranda">Beranda</a>
         <a href="#produk">Produk</a>
         <a href="#kontak">Kontak</a>
     </nav>
 
-    <section id="home" class="hero">
+    <section id="beranda" class="hero">
         <h2>Selamat Datang di Toko Iwak Gatul</h2>
-        <p>Menyediakan berbagai macam ikan segar dan berkualitas.</p>
-        <button onclick="pesanSekarang()">Pesan Sekarang</button>
+        <p>Menyediakan berbagai macam ikan segar dengan harga terjangkau.</p>
+        <button onclick="pesan()">Pesan Sekarang</button>
     </section>
 
     <section id="produk">
-        <h2>🐠 Produk Kami</h2>
+        <h2>Produk Kami</h2>
 
-        <div class="produk-container">
-
+        <div class="produk">
             <div class="card">
-                <h3>Ikan Lele</h3>
-                <p>Rp20.000 / kg</p>
-                <button onclick="pesan('Ikan Lele')">Pesan</button>
+                <h3>🐟 Ikan Lele</h3>
+                <p>Rp20.000 / Kg</p>
+                <button onclick="pesanProduk('Ikan Lele')">
+                    Pesan
+                </button>
             </div>
 
             <div class="card">
-                <h3>Ikan Nila</h3>
-                <p>Rp30.000 / kg</p>
-                <button onclick="pesan('Ikan Nila')">Pesan</button>
+                <h3>🐠 Ikan Nila</h3>
+                <p>Rp30.000 / Kg</p>
+                <button onclick="pesanProduk('Ikan Nila')">
+                    Pesan
+                </button>
             </div>
 
             <div class="card">
-                <h3>Ikan Mujair</h3>
-                <p>Rp28.000 / kg</p>
-                <button onclick="pesan('Ikan Mujair')">Pesan</button>
+                <h3>🐡 Ikan Gurame</h3>
+                <p>Rp40.000 / Kg</p>
+                <button onclick="pesanProduk('Ikan Gurame')">
+                    Pesan
+                </button>
             </div>
-
-            <div class="card">
-                <h3>Ikan Gurame</h3>
-                <p>Rp40.000 / kg</p>
-                <button onclick="pesan('Ikan Gurame')">Pesan</button>
-            </div>
-
         </div>
     </section>
 
     <section id="kontak" class="kontak">
-        <h2>📍 Kontak Kami</h2>
+        <h2>📍 Kontak Toko</h2>
 
-        <p><b>Alamat:</b> Jl. Ikan Segar No. 10</p>
-        <p><b>WhatsApp:</b> 08xxxxxxxxxx</p>
+        <p>
+            <b>Alamat:</b><br>
+            Jl. Contoh Alamat Toko Iwak Gatul
+        </p>
 
-        <a class="wa" href="https://wa.me/628xxxxxxxxxx" target="_blank">
-            💬 Chat WhatsApp
-        </a>
-    </section>
+        <p>
+            <b>WhatsApp:</b><br>
+            08XXXXXXXXXX
+        </p>
 
-    <footer>
-        <p>© 2026 Toko Iwak Gatul</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <a class="whatsapp"
+           href="https://wa.me/628XXXXXXXXXX"
+           target="_blank">
+            💬 Hubungi via
